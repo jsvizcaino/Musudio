@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+body {
+  background-color: #f3f9ff;
+  font-family: "Noto sans", sans-serif;
+  margin: 0 auto;
+}
+
+.company-card::-webkit-scrollbar {
+  width: 0em;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em;
+  display: inline-block;
+}
+
+ul {
+  list-style: none; /*Remove default bullets*/
+}
+
+ul li::before {
+  content: "\2022";
+  font-size: 20px;
+  color: #adcae6;
+  margin-left: -1.6em;
+  font-weight: bolder;
+  padding: 0.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  font-size: 18px;
+}
+/* styling for iPhone 11 or below. 828 px*/
+@media screen and (max-width: 55.99rem) {
+  .navbar {
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin-right: 6%;
+  }
+
+  .card-container {
+    margin: 65px auto;
+  }
+
+  .card {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    padding: 2%;
+    max-width: 350px;
+    background-color: white;
+  }
+
+  /*About me card*/
+  .content-about-me {
+    align-items: center;
+    background-color: white;
+    text-align: left;
+  }
+  .image-container {
+    float: left;
+  }
+
+  .content-about-me {
+    margin-top: 1px;
+    overflow: inherit;
+    justify-content: flex-start;
+  }
+
+  /*Work History Card styling begins*/
+  .company-card {
+    padding-top: 1%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 550px;
+    overflow: scroll;
+  }
+
+  .shadow {
+    -moz-box-shadow: 1px 1px 3px 2px #c6dcff;
+    -webkit-box-shadow: 1px 1px 3px 2px #c6dcff;
+    box-shadow: 1px 1px 2px 1px #c6dcff;
+  }
+
+  .company-name {
+    max-width: 142px;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+
+  .company-title {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding-left: 8%;
+  }
+
+  .employment-years {
+    margin-top: -18px;
+  }
+
+  .company-responsibilities-container {
+    border-color: red;
+    flex-direction: row;
+  }
+
+  .title {
+    margin-left: 3%;
+  }
+
+  .company-responsibilities {
+    border-color: blue;
+    padding-left: 2%;
+  }
+}
+/*end 50rem styling*/
+
+/* Desktop Styling */
+@media screen and (min-width: 56rem) {
+  .navbar {
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    background-color: #f3f9ff;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .card-container {
+    margin: 125px auto;
+  }
+
+  .card {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    padding: 2%;
+    max-width: 500px;
+
+    background-color: white;
+  }
+
+  .split {
+    width: 25%;
+    position: fixed;
+    top: 0;
+  }
+
+  .right {
+    left: 250px;
+    align-items: center;
+    background-color: white;
+  }
+
+  .image-container {
+    display: flex;
+    float: left;
+  }
+
+  .about-me {
+    margin-top: 125px;
+    align-items: center;
+    background-color: white;
+    text-align: left;
+    left: 15%;
+    position: fixed;
+    line-height: 1.5em;
+  }
+
+  .content-about-me {
+    margin-top: 50px;
+    overflow: inherit;
+    justify-content: flex-start;
+  }
+
+  .company-card {
+    padding-top: 1%;
+    padding-left: 2%;
+    background: white;
+    height: 550px;
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  .shadow {
+    -moz-box-shadow: 1px 1px 3px 2px #c6dcff;
+    -webkit-box-shadow: 1px 1px 3px 2px #c6dcff;
+    box-shadow: 1px 1px 2px 1px #c6dcff;
+  }
+
+  .company-name {
+    max-width: 300px;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-size: 24px;
+  }
+
+  .company-title {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding-left: 8%;
+  }
+
+  .employment-years {
+    margin-top: -18px;
+  }
+
+  .company-responsibilities-container {
+    border-color: red;
+    flex-direction: row;
+  }
+
+  .title {
+    margin-left: 3%;
+    font-size: 20px;
+  }
+
+  .company-responsibilities {
+    padding-left: 2%;
+  }
+}
+/*end Desktop styling*/
